@@ -1,0 +1,662 @@
+<!DOCTYPE html><html class="scroll-smooth dark" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Priyanshu Bajaj | Strategic Marketing Professional Portfolio</title>
+<meta content="MBA-qualified Marketing Professional specializing in multi-channel campaigns, strategic CRM management, and high-impact digital growth." name="description">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#e63946",
+                        "on-primary": "#ffffff",
+                        "background": "#000000",
+                        "surface": "#131313",
+                        "surface-container": "#1f1f1f",
+                        "surface-container-low": "#1b1b1b",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface-variant": "#353535",
+                        "on-surface": "#e2e2e2",
+                        "on-surface-variant": "#e4bebc",
+                        "outline": "#ab8987",
+                        "outline-variant": "#5b403f",
+                        "primary-container": "#ff535b",
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "section-padding": "120px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "display": ["Manrope", "sans-serif"],
+                        "body": ["Inter", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "headline-lg": ["42px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-card { background: rgba(31, 31, 31, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(230, 57, 70, 0.1); }
+        .red-gradient-text { background: linear-gradient(135deg, #e63946 0%, #ff535b 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-vignette {
+            mask-image: radial-gradient(circle at center, black 40%, transparent 85%);
+            -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 85%);
+        }
+        @keyframes fade-up {
+            0% { opacity: 0; transform: translateY(10px); }
+            20% { opacity: 1; transform: translateY(0); }
+            80% { opacity: 1; transform: translateY(0); }
+            100% { opacity: 0; transform: translateY(-10px); }
+        }
+        .animate-word {
+            display: inline-block;
+            animation: fade-up 2s infinite;
+        }
+
+        /* Accordion Custom Styles */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease, opacity 0.3s ease;
+            opacity: 0;
+        }
+        .accordion-item.active .accordion-content {
+            max-height: 500px; /* Specific height for experience cards */
+            opacity: 1;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+        .accordion-item.active .chevron-icon {
+            transform: rotate(180deg);
+        }
+        .project-bg-fade {
+            mask-image: linear-gradient(to right, black 20%, transparent 95%);
+            -webkit-mask-image: linear-gradient(to right, black 20%, transparent 95%);
+        }
+
+        /* Experience Specific Accordion */
+        .exp-accordion-item {
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+        .exp-accordion-item.active {
+            background-color: #1f1f1f;
+            border-color: rgba(230, 57, 70, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary/30 font-body">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-white/5">
+<nav class="flex justify-between items-center h-16 px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<div class="font-display text-xl font-extrabold tracking-tighter">P.BAJAJ</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors" href="#about">About</a>
+<a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors" href="#projects">Work</a>
+<a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors" href="#experience">Experience</a>
+<a class="px-5 py-2 bg-primary text-on-primary text-sm font-bold hover:brightness-110 transition-all rounded" href="#contact">Contact</a>
+</div>
+<button class="md:hidden text-on-surface"><span class="material-symbols-outlined">menu</span></button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="pt-32 pb-24 px-margin-mobile md:px-gutter max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<span class="inline-block px-3 py-1 bg-primary/10 text-primary text-[11px] font-bold uppercase tracking-widest rounded-full mb-6 border border-primary/20">Marketing Strategist</span>
+<h1 class="font-display text-[48px] md:text-display-lg mb-4 leading-tight">Priyanshu <span class="red-gradient-text">Bajaj</span></h1>
+<div class="mb-6">
+<h2 class="font-display text-2xl md:text-3xl font-bold leading-tight">
+        Marketing Professional Driving Growth Through 
+        <span class="block sm:inline text-primary min-w-[160px]">
+<span class="animate-word" id="rotating-word" style="animation: 2s ease 0s infinite normal none running fade-up;">Strategy</span>
+</span>
+</h2>
+</div>
+<p class="text-lg text-on-surface-variant mb-8 max-w-xl leading-relaxed">
+    MBA-qualified marketing professional with hands-on experience across CRM, email marketing, content creation, and multi-channel campaign delivery in B2B and B2C environments.
+</p>
+<div class="bg-surface-container/30 border-y border-outline-variant/20 py-4 mb-10 flex flex-wrap gap-x-8 gap-y-2">
+<div class="flex items-center gap-2 text-sm font-bold"><span class="text-primary">30%</span> <span class="text-on-surface-variant">Revenue Growth</span></div>
+<div class="flex items-center gap-2 text-sm font-bold"><span class="text-primary">500+</span> <span class="text-on-surface-variant">Stakeholders Reached</span></div>
+<div class="flex items-center gap-2 text-sm font-bold"><span class="text-primary">20%</span> <span class="text-on-surface-variant">Retention Improvement</span></div>
+</div>
+<div class="flex flex-wrap gap-4">
+<a class="px-6 py-3 bg-primary text-on-primary font-bold flex items-center justify-center gap-2 hover:translate-y-[-2px] transition-all rounded" href="#projects">View Projects</a>
+<a class="px-6 py-3 border border-outline-variant text-on-surface font-bold flex items-center justify-center gap-2 hover:bg-surface-container transition-all rounded" href="https://1drv.ms/b/c/b09649b6ac6c1532/IQB9a4OGaKQWTLHo0Iv-ypYeATnh3lPB84zEg8hWIJkFCfs?e=2tUeKg" target="_blank">Download CV</a>
+<a class="px-6 py-3 bg-surface-container text-on-surface font-bold flex items-center justify-center gap-2 hover:bg-surface-container-high transition-all rounded" href="https://www.linkedin.com/in/priyanshu-bajaj-75694a316/">LinkedIn</a>
+<a class="px-6 py-3 bg-white text-black font-bold flex items-center justify-center gap-2 hover:bg-on-surface transition-all rounded" href="#contact">Contact Me</a>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="relative group">
+<div class="relative aspect-[4/5] overflow-hidden rounded bg-transparent">
+<img alt="Priyanshu Bajaj" class="w-full h-full object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-700 hero-vignette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe8U18--gM2UJ6CZUEESPoqwPCFQtBmKJflTm3uDLM57pKBliWLoHLiTXD5V_8qc-WxYYg4hmo5xBjQi834dKp3FFchEGa4loB41LJtcrO_Cxge4vwrFdc2CNQRf58METO6UmnT2VQ9gWQteY4GQz44_Q0oUznc33bYcovKhv0F_VIAVT8FsNmd2o-D2-dUi5bbbRQI0tmH6z4IPCc912sbxOKbPVmJMnvQKebL-pdnFonqa1IjE9Dm4DBdzMuPktTnRypoPIZpgZN">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="bg-surface-container-lowest py-24 transition-all duration-1000 opacity-100 translate-y-0" id="about">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 order-2 lg:order-1">
+<span class="inline-block px-3 py-1 bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-[0.2em] rounded border border-primary/20 mb-6">MBA with Placement Graduate · Open to Marketing &amp; CRM roles</span>
+<h2 class="font-display text-headline-lg leading-tight mb-8">Turning Insights Into <span class="text-primary">Impact</span></h2>
+<p class="text-lg text-on-surface leading-relaxed mb-6"></p><p class="" data-pm-slice="1 1 []">MBA-qualified marketing professional with hands-on experience across campaign execution, content creation, stakeholder engagement, and CRM-driven activity in B2B and B2C environments. I blend practical execution with strategic thinking, from coordinating cross-departmental campaigns to turning market data into decisions that drive results.</p><p></p>
+<p class="text-on-surface-variant text-base leading-relaxed mb-8"></p><p class="" data-pm-slice="1 1 []"><span class="" style="color: rgb(228, 190, 188); font-size: 18px;">Based in London with full right to work in the UK, I'm looking to bring this mix of creativity and commercial thinking to a growth-focused marketing team</span><br><span style="color: rgb(228, 190, 188); font-size: 18px;"></span></p><p></p>
+</div>
+<div class="lg:col-span-6 order-1 lg:order-2">
+<div class="relative p-2 bg-surface border border-white/5 rounded shadow-2xl">
+<img alt="Marketing strategy illustration" class="w-full h-auto rounded" src="https://lh3.googleusercontent.com/aida/AP1WRLuV3tI8EkfzunPqswFb6hW75R4VuCeqdHunoJDSFBICuSkQu1mpHwF-ZN9FHTBCicEqgAz8_xCm-Md7VRLc1pa0eS5k8i7udBYR3QjTcwjblC8HVWZaIgg8anY8S8H7rW-p5zdg6Sx24LX0pTyil-CNSAV6qP3XKycC0f1wkyUG3yp0eAfVWcyejtKxA-Z2oDimNux4D9e86iKSeSBdO9Lk7mDsFDbQsL5HS6egO-ZGikSh4tGIRiO6kuL1">
+<div class="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 border border-primary/20 -z-10 rounded-full blur-2xl"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Projects Section -->
+<section class="py-24 transition-all duration-1000 opacity-100 translate-y-0" id="projects">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="flex justify-between items-end mb-16">
+<h2 class="font-display text-headline-lg">Featured Projects</h2>
+<div class="h-1 w-24 bg-primary"></div>
+</div>
+<div class="space-y-6">
+<!-- Project 1: Netflix VR -->
+<div class="accordion-item group relative overflow-hidden bg-surface-container border border-outline-variant/20 rounded-xl shadow-lg transition-all duration-300" data-project="1">
+<div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+<img alt="" class="w-full h-full object-cover opacity-20 project-bg-fade group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKpVHZWmGNXdwRUAzVLTltHs-VSUtfMYwuaJRx1LQIVM_TbCVgXzMrt262Q6YAxBG4-Zemc9UpYCOeEI0iKSN6uZj73ACn7nKUaW0FGUC6voIc7wqh2IKGAT14CDHlEMmoE6buYCHfM8DNccrQ8vd_bV-sWejw8tRuQN6mcyC8jQE1yYd41sbLiPBIg1s1K5TzaCTxrWsDbYxReE3FjPy0h0m_EZsIBa3q-x9dveRnur--WHKxn132YmFV7_La8TG9Z2VhPvQJln47">
+</div>
+<button class="accordion-trigger relative z-10 w-full px-8 py-6 flex flex-col md:flex-row md:items-center justify-between text-left gap-4 hover:bg-white/5 transition-colors">
+<div class="flex-1">
+<div class="flex items-center gap-3 mb-1">
+<span class="text-xs font-bold uppercase tracking-widest text-primary">Strategic Launch</span>
+<span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Netflix</span>
+</div>
+<h3 class="font-display text-2xl md:text-3xl font-bold">Netflix VR Headset &amp; Suit</h3>
+<p class="text-sm text-on-surface-variant italic mt-1 max-w-2xl truncate md:whitespace-normal">How to position a streaming giant in a hardware-saturated market...</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined chevron-icon text-primary text-3xl transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="accordion-content relative z-10 px-8 pb-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 pt-4">
+<div class="space-y-6">
+<div>
+<h4 class="text-sm font-bold uppercase tracking-widest text-primary mb-2">The Challenge</h4>
+<p class="text-on-surface leading-relaxed">Positioning a streaming giant in a hardware-saturated market while maintaining brand prestige and utility.</p>
+</div>
+<div>
+<h4 class="text-sm font-bold uppercase tracking-widest text-primary mb-2">What I Did</h4>
+<p class="text-on-surface-variant leading-relaxed">Developed a comprehensive go-to-market strategy integrating "Cinema Anywhere" messaging with tiered subscription-hardware bundles to reduce entry barriers.</p>
+</div>
+<div>
+<h4 class="text-sm font-bold uppercase tracking-widest text-primary mb-2">What I Did Differently</h4>
+<p class="text-on-surface-variant leading-relaxed">Shifted focus from gaming specs to content immersion, leveraging Netflix's existing library as the primary USP over competitor hardware.</p>
+</div>
+<div>
+<h4 class="text-sm font-bold uppercase tracking-widest text-primary mb-2">Impact</h4>
+<p class="text-xl font-bold text-white">Projected 30% Market Penetration within Year 1 through ecosystem lock-in.</p>
+</div>
+<div class="pt-4 flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-background border border-outline-variant/30 text-[10px] font-bold uppercase rounded">Market Entry</span>
+<span class="px-3 py-1 bg-background border border-outline-variant/30 text-[10px] font-bold uppercase rounded">Bundle Pricing</span>
+<span class="px-3 py-1 bg-background border border-outline-variant/30 text-[10px] font-bold uppercase rounded">GTM Strategy</span>
+</div>
+</div>
+<div class="bg-surface/50 p-6 border border-white/5 rounded-lg flex flex-col justify-center items-center">
+<h4 class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-6">Competitive Positioning Map</h4>
+<div class="relative w-full aspect-square border-2 border-dashed border-outline-variant/30 max-w-sm mx-auto flex items-center justify-center">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 text-[10px] font-bold uppercase bg-surface px-2 -top-3">Premium</div>
+<div class="absolute bottom-0 left-1/2 -translate-x-1/2 text-[10px] font-bold uppercase bg-surface px-2 -bottom-3">Value</div>
+<div class="absolute left-0 top-1/2 -translate-y-1/2 text-[10px] font-bold uppercase bg-surface px-2 -left-3 -rotate-90">Hardware Focus</div>
+<div class="absolute right-0 top-1/2 -translate-y-1/2 text-[10px] font-bold uppercase bg-surface px-2 -right-3 rotate-90">Content Focus</div>
+<div class="absolute top-1/4 right-1/4 w-4 h-4 bg-primary rounded-full shadow-[0_0_15px_rgba(230,57,70,0.8)] flex items-center justify-center animate-pulse">
+<span class="absolute top-6 whitespace-nowrap font-bold text-[10px] text-primary">Netflix VR</span>
+</div>
+<div class="absolute top-1/3 left-1/3 w-3 h-3 bg-on-surface-variant/40 rounded-full"></div>
+<div class="absolute bottom-1/4 right-1/2 w-3 h-3 bg-on-surface-variant/40 rounded-full"></div>
+</div>
+<p class="text-[10px] text-on-surface-variant italic mt-6">Defining Netflix VR as a Content-First Premium Device</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 2: TaskUs CRM -->
+<div class="accordion-item group relative overflow-hidden bg-surface-container border border-outline-variant/20 rounded-xl shadow-lg transition-all duration-300" data-project="2">
+<div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+<img alt="" class="w-full h-full object-cover opacity-15 project-bg-fade group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9yhsYQ-JbuqlYBfcL_rrCfquGtyHQsd4voFp39Hkm1S64uP0hRgjbD7cz9jJws-wl3LwHX-Kk2t4R0-yGWntecbNBQe8Tz3XznOHT9I0I4GgoFJU7XTt8yVpiF3LdArwb8VagyqkP1vyMqAPnaTzagscI1N3YN7M0ZkT7nAyoXprDkW3JOebykkMxZncnFIHj__gw-Wc64eCwNOgW928sgmfQ0CjSRT1D-fiWJIdZLFWrjdIJI2GsIBMq39VtdFc6rREGvhVfLKyV">
+</div>
+<button class="accordion-trigger relative z-10 w-full px-8 py-6 flex flex-col md:flex-row md:items-center justify-between text-left gap-4 hover:bg-white/5 transition-colors">
+<div class="flex-1">
+<div class="flex items-center gap-3 mb-1">
+<span class="text-xs font-bold uppercase tracking-widest text-primary">CRM &amp; Sales</span>
+<span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">TaskUs</span>
+</div>
+<h3 class="font-display text-2xl md:text-3xl font-bold">TaskUs CRM-Driven Sales Campaign</h3>
+<p class="text-sm text-on-surface-variant italic mt-1 max-w-2xl truncate md:whitespace-normal">Scaling lead conversion through automated data intelligence...</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined chevron-icon text-primary text-3xl transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="accordion-content relative z-10 px-8 pb-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-4">
+<div class="lg:col-span-7 space-y-6">
+<div>
+<h4 class="text-sm font-bold uppercase tracking-widest text-primary mb-2">The Challenge</h4>
+<p class="text-on-surface leading-relaxed">Low conversion rates from cold outreach and fragmented lead tracking across multiple legacy systems.</p>
+</div>
+<div>
+<h4 class="text-sm font-bold uppercase tracking-widest text-primary mb-2">What I Did</h4>
+<p class="text-on-surface-variant leading-relaxed">Built a streamlined CRM workflow in Salesforce/HubSpot, automating lead scoring and re-engaging inactive leads through personalized multi-channel sequences.</p>
+</div>
+<div>
+<h4 class="text-sm font-bold uppercase tracking-widest text-primary mb-2">What I Did Differently</h4>
+<p class="text-on-surface-variant leading-relaxed">Integrated real-time GA4 behavior data into the sales pipeline, allowing reps to time their calls based on active intent signals rather than fixed schedules.</p>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div class="bg-surface/40 p-6 border border-white/5 rounded-lg mb-4">
+<h4 class="text-sm font-bold uppercase tracking-widest text-primary mb-4">Impact</h4>
+<div class="grid grid-cols-2 gap-4 text-center">
+<div>
+<div class="text-3xl font-bold text-white">40%</div>
+<div class="text-[10px] uppercase font-bold text-on-surface-variant">Lead Conversion</div>
+</div>
+<div>
+<div class="text-3xl font-bold text-white">2.5x</div>
+<div class="text-[10px] uppercase font-bold text-on-surface-variant">Pipeline Speed</div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-background border border-outline-variant/30 text-[10px] font-bold uppercase rounded">Salesforce</span>
+<span class="px-3 py-1 bg-background border border-outline-variant/30 text-[10px] font-bold uppercase rounded">Lead Scoring</span>
+<span class="px-3 py-1 bg-background border border-outline-variant/30 text-[10px] font-bold uppercase rounded">Automation</span>
+<span class="px-3 py-1 bg-background border border-outline-variant/30 text-[10px] font-bold uppercase rounded">CRM Ops</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 3: BSC Multi-Channel -->
+<div class="accordion-item group relative overflow-hidden bg-surface-container border border-outline-variant/20 rounded-xl shadow-lg transition-all duration-300" data-project="3">
+<div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+<img alt="" class="w-full h-full object-cover opacity-15 project-bg-fade group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCc54zmvrwb_D-B1bH3IO--4Af0sSYJufZhgECJrK1pMMAPT1BRk2OmUT0TyChCyQA2EFWQXJeKsBO9EYTZNjfC17f1b8tRY6SrZ-4eT29x6os40JCJBCRNCO-5-g5ZYrMbt3WWC1XH7BYC4SHrk2MCdMSGc_T2t_EQ0RFo6-m7zMtXf9_0Z6keLAEimJWh_8qPjiApUwaxh0UcvYjcrC3dyys36gEgliu0Y7-TAjfvzfB3bIjd-JDptqpEKBHMuDFtQ-h6UNWqdup">
+</div>
+<button class="accordion-trigger relative z-10 w-full px-8 py-6 flex flex-col md:flex-row md:items-center justify-between text-left gap-4 hover:bg-white/5 transition-colors">
+<div class="flex-1">
+<div class="flex items-center gap-3 mb-1">
+<span class="text-xs font-bold uppercase tracking-widest text-primary">Multi-Channel Comms</span>
+<span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Barnet Southgate College</span>
+</div>
+<h3 class="font-display text-2xl md:text-3xl font-bold">Barnet Southgate College Multi-Channel Comms</h3>
+<p class="text-sm text-on-surface-variant italic mt-1 max-w-2xl truncate md:whitespace-normal">Coordinating complex stakeholder engagement for institutional growth...</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined chevron-icon text-primary text-3xl transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="accordion-content relative z-10 px-8 pb-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-4">
+<div class="lg:col-span-7 space-y-6">
+<div>
+<h4 class="text-sm font-bold uppercase tracking-widest text-primary mb-2">The Challenge</h4>
+<p class="text-on-surface leading-relaxed">Increasing enrollment and stakeholder engagement across diverse demographics using traditional and digital channels.</p>
+</div>
+<div>
+<h4 class="text-sm font-bold uppercase tracking-widest text-primary mb-2">What I Did</h4>
+<p class="text-on-surface-variant leading-relaxed">Managed a 360-degree campaign across social, email, and campus signage, ensuring consistent brand voice and high-value messaging at every touchpoint.</p>
+</div>
+<div>
+<h4 class="text-sm font-bold uppercase tracking-widest text-primary mb-2">What I Did Differently</h4>
+<p class="text-on-surface-variant leading-relaxed">Implemented a 'Student-First' content engine, replacing corporate announcements with authentic testimonial-based storytelling and live Q&amp;A sessions.</p>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div class="bg-surface/40 p-6 border border-white/5 rounded-lg mb-4">
+<h4 class="text-sm font-bold uppercase tracking-widest text-primary mb-4">Impact</h4>
+<div class="grid grid-cols-2 gap-4 text-center">
+<div>
+<div class="text-3xl font-bold text-white">500+</div>
+<div class="text-[10px] uppercase font-bold text-on-surface-variant">Stakeholders Engaged</div>
+</div>
+<div>
+<div class="text-3xl font-bold text-white">20%</div>
+<div class="text-[10px] uppercase font-bold text-on-surface-variant">Retention Boost</div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-background border border-outline-variant/30 text-[10px] font-bold uppercase rounded">Social Strategy</span>
+<span class="px-3 py-1 bg-background border border-outline-variant/30 text-[10px] font-bold uppercase rounded">Copywriting</span>
+<span class="px-3 py-1 bg-background border border-outline-variant/30 text-[10px] font-bold uppercase rounded">Event Mktg</span>
+<span class="px-3 py-1 bg-background border border-outline-variant/30 text-[10px] font-bold uppercase rounded">PR</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills & Certs -->
+<section class="py-24 transition-all duration-1000 opacity-100 translate-y-0" id="skills">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Skills -->
+<div class="lg:col-span-7">
+<div class="flex items-center justify-between mb-12">
+<h2 class="font-display text-headline-lg">Expertise</h2>
+<button class="px-6 py-2 border border-primary text-primary hover:bg-primary/10 transition-all text-xs font-bold uppercase tracking-widest rounded" id="expertise-randomizer">Click</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-6" id="expertise-grid">
+<div class="expertise-item bg-surface-container p-4 border border-outline-variant/20 flex items-center gap-3 transition-colors duration-500" style="cursor: pointer; transform: scale(1);" data-lit="false">
+<span class="material-symbols-outlined text-primary">campaign</span>
+<span class="text-xs font-bold uppercase">Campaign Delivery</span>
+</div>
+<div class="expertise-item bg-surface-container p-4 border border-outline-variant/20 flex items-center gap-3 transition-colors duration-500" style="cursor: pointer; transform: scale(1);" data-lit="false">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span class="text-xs font-bold uppercase">Email Marketing</span>
+</div>
+<div class="expertise-item bg-surface-container p-4 border border-outline-variant/20 flex items-center gap-3 transition-colors duration-500" style="cursor: pointer; transform: scale(1);" data-lit="false">
+<span class="material-symbols-outlined text-primary">article</span>
+<span class="text-xs font-bold uppercase">Content Strategy</span>
+</div>
+<div class="expertise-item bg-surface-container p-4 border border-outline-variant/20 flex items-center gap-3 transition-colors duration-500" style="cursor: pointer; transform: scale(1);" data-lit="false">
+<span class="material-symbols-outlined text-primary">analytics</span>
+<span class="text-xs font-bold uppercase">CRM &amp; Analytics</span>
+</div>
+<div class="expertise-item bg-surface-container p-4 border border-outline-variant/20 flex items-center gap-3 transition-colors duration-500" style="cursor: pointer; transform: scale(1);" data-lit="false">
+<span class="material-symbols-outlined text-primary">search</span>
+<span class="text-xs font-bold uppercase">Market Research</span>
+</div>
+<div class="expertise-item bg-surface-container p-4 border border-outline-variant/20 flex items-center gap-3 transition-colors duration-500" style="cursor: pointer; transform: scale(1);" data-lit="false">
+<span class="material-symbols-outlined text-primary">groups</span>
+<span class="text-xs font-bold uppercase">Stakeholder Engagement</span>
+</div>
+<div class="expertise-item bg-surface-container p-4 border border-outline-variant/20 flex items-center gap-3 transition-colors duration-500" style="cursor: pointer; transform: scale(1);" data-lit="false">
+<img alt="HubSpot" class="w-5 h-5 invert opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKt1Pf_OagIFGECA6x12DrWn5pkrFdTBx12-_GW-kgRy_RKTkj1DptGZYoHE8Rfv7TJ_RbV1-NDAzTeR64Ll_nHe7ZHNGdRib8cRX9p1ChlQ9hlJCjI7zYXIyZmLB5PH_Z1zqJu63RdxWIBtcBSX8b_LZBZec6_jcB7HWOO9Ok_hlcK0N7NJSCILxwxm3Ah96zsTO-j7AAdKhEWZpRUZo8UhdgnNCB1GJUm-KAgaHITPOz3wCFnIRAWwrDJLVPS2CoKKtHiLOWU3Wz">
+<span class="text-xs font-bold uppercase">HubSpot</span>
+</div>
+<div class="expertise-item bg-surface-container p-4 border border-outline-variant/20 flex items-center gap-3 transition-colors duration-500" style="cursor: pointer; transform: scale(1);" data-lit="false">
+<img alt="Salesforce" class="w-5 h-5 invert opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALr3bjNppN9txhTTW8eXOh-g-HMTy2GKBEardLhs69jjvUJ2A63A8tzxg1PYivtV0L28cZH_ylrWgQYLy1itN_zA03ceYtqZ3zz-5paMkx3V6Tv_h2d3MHjzBmGk9Nap2Pw7Wo89V7l0fTisPkd0F1G_iSe-lWbjNOhicNj21m0VdRYT5h41U5lk1t2XB1VX7RhWlmHjV6tGkuxBl0p3uQStMqRvLbNpywl9IhXmPOynzk6cofVne9H-OPQnT7mWj9jbzzQx3a6Ntp">
+<span class="text-xs font-bold uppercase">Salesforce</span>
+</div>
+<div class="expertise-item bg-surface-container p-4 border border-outline-variant/20 flex items-center gap-3 transition-colors duration-500" style="cursor: pointer; transform: scale(1);" data-lit="false">
+<img alt="Google Analytics" class="w-5 h-5 invert opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRQPtfNPAdDaFMuAS48IaJy-UNwf33aD9PD-620CVXmb_wotVwABh73VxpXRONExzhkHOvzjesoFeKUmtG4i0fxvNWq8qdNJ-JmGCbtFKl60egfDH6hcuv7hEikowvLb_3PWYR_IFXD-cxWrfUrHsu1lPyi9HKmaIb9s6xE-7anV3NkQuBeVxygTuszY60MFbQU7DUpai2kL1kWPMZfFqyxfFtlUNWatP_GT5hX45mFNq6yqJNaI92H8iXOzUI25TW-Dd36-HfRTln">
+<span class="text-xs font-bold uppercase">GA4</span>
+</div>
+</div>
+<div class="mt-8 flex items-center justify-between border-t border-outline-variant/20 pt-6"><button class="px-4 py-2 bg-surface-container border border-outline-variant/30 text-[10px] font-bold uppercase tracking-widest hover:bg-surface-container-high transition-all rounded" id="expertise-reset">Reset</button></div></div>
+<!-- Certs -->
+<div class="lg:col-span-5">
+<h2 class="font-display text-3xl mb-12">Certifications</h2>
+<div class="space-y-4"><div class="mb-6"><h3 class="text-xs font-bold uppercase tracking-widest text-primary mb-4 flex items-center gap-2"><span class="material-symbols-outlined text-sm">check_circle</span> Completed</h3><div class="space-y-3"><div class="flex items-center gap-4 p-4 bg-surface-container-low border border-outline-variant/20"><span class="material-symbols-outlined text-primary">verified</span><span class="text-sm font-bold">Google Analytics 4 (GA4)</span></div><div class="flex items-center gap-4 p-4 bg-surface-container-low border border-outline-variant/20"><span class="material-symbols-outlined text-primary">task</span><span class="text-sm font-bold">Project Management Foundations</span></div><div class="flex items-center gap-4 p-4 bg-surface-container-low border border-outline-variant/20"><span class="material-symbols-outlined text-primary">table_chart</span><span class="text-sm font-bold">Excel: Advanced Formulas and Functions</span></div></div></div><div class="mt-8"><h3 class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-4 flex items-center gap-2"><span class="material-symbols-outlined text-sm">pending</span> In Progress</h3><div class="space-y-3"><div class="flex items-center gap-4 p-4 bg-surface-container-low border border-outline-variant/20 opacity-70"><span class="material-symbols-outlined text-primary">hub</span><span class="text-sm font-bold">HubSpot Marketing Certification</span></div><div class="flex items-center gap-4 p-4 bg-surface-container-low border border-outline-variant/20 opacity-70"><span class="material-symbols-outlined text-primary">campaign</span><span class="text-sm font-bold">Google Digital Marketing Certificate</span></div></div></div></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="py-24 bg-surface-container-low transition-all duration-1000 opacity-100 translate-y-0" id="experience">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<h2 class="font-display text-headline-lg mb-16">Professional Experience</h2>
+<div class="space-y-4">
+<!-- Experience Card 1 -->
+<div class="accordion-item exp-accordion-item group bg-surface-container-lowest border border-white/5 rounded-lg shadow-md overflow-hidden" data-exp="1">
+<button class="accordion-trigger w-full px-6 py-4 flex items-center justify-between text-left h-[80px]">
+<div class="flex flex-col md:flex-row md:items-center gap-4 flex-1">
+<div class="min-w-[200px]">
+<h3 class="text-xl font-bold text-on-surface truncate">Barnet &amp; Southgate College</h3>
+<p class="text-xs font-bold text-primary uppercase tracking-wider">Estates &amp; Facilities Intern • 2025 - 2026</p>
+</div>
+<div class="hidden md:flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-low border border-white/5 text-[10px] font-bold uppercase rounded-full text-on-surface-variant">Content</span>
+<span class="px-3 py-1 bg-surface-container-low border border-white/5 text-[10px] font-bold uppercase rounded-full text-on-surface-variant">Communications</span>
+<span class="px-3 py-1 bg-surface-container-low border border-white/5 text-[10px] font-bold uppercase rounded-full text-on-surface-variant">Operations</span>
+</div>
+</div>
+<span class="material-symbols-outlined chevron-icon text-primary transition-transform duration-300">expand_more</span>
+</button>
+<div class="accordion-content px-6">
+<ul class="list-disc list-inside space-y-3 text-sm text-on-surface-variant max-w-3xl">
+<li class="">Coordinated multi-channel communications across 4 departments, reaching <span class="font-bold text-white">500+ stakeholders</span>.</li>
+<li class="">Proofread and signed off campaign materials to maintain messaging <span class="font-bold text-white">accuracy and consistency</span>.</li>
+<li class="">Produced content assets using Canva and Adobe Express aligned to <span class="font-bold text-white">organisational standards</span>.</li>
+</ul>
+</div>
+</div>
+<!-- Experience Card 2 -->
+<div class="accordion-item exp-accordion-item group bg-surface-container-lowest border border-white/5 rounded-lg shadow-md overflow-hidden" data-exp="2">
+<button class="accordion-trigger w-full px-6 py-4 flex items-center justify-between text-left h-[80px]">
+<div class="flex flex-col md:flex-row md:items-center gap-4 flex-1">
+<div class="min-w-[200px]">
+<h3 class="text-xl font-bold text-on-surface truncate">TaskUs</h3>
+<p class="text-xs font-bold text-primary uppercase tracking-wider">Teammate (Sales Executive) • 2023 - 2024</p>
+</div>
+<div class="hidden md:flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-low border border-white/5 text-[10px] font-bold uppercase rounded-full text-on-surface-variant">CRM</span>
+<span class="px-3 py-1 bg-surface-container-low border border-white/5 text-[10px] font-bold uppercase rounded-full text-on-surface-variant">Sales</span>
+<span class="px-3 py-1 bg-surface-container-low border border-white/5 text-[10px] font-bold uppercase rounded-full text-on-surface-variant">Campaigns</span>
+</div>
+</div>
+<span class="material-symbols-outlined chevron-icon text-primary transition-transform duration-300">expand_more</span>
+</button>
+<div class="accordion-content px-6">
+<ul class="list-disc list-inside space-y-3 text-sm text-on-surface-variant max-w-3xl">
+<li class="">Used Salesforce CRM to manage targeted communications, contributing to a <span class="font-bold text-white">30% revenue increase</span>.</li>
+<li class="">Refined audience segmentation through data analysis, improving outreach <span class="font-bold text-white">efficiency by 20%</span>.</li>
+<li class="">Maintained accurate performance reports to support <span class="font-bold text-white">operational decision making</span>.</li>
+</ul>
+</div>
+</div>
+<!-- Experience Card 3 -->
+<div class="accordion-item exp-accordion-item group bg-surface-container-lowest border border-white/5 rounded-lg shadow-md overflow-hidden" data-exp="3">
+<button class="accordion-trigger w-full px-6 py-4 flex items-center justify-between text-left h-[80px]">
+<div class="flex flex-col md:flex-row md:items-center gap-4 flex-1">
+<div class="min-w-[200px]">
+<h3 class="text-xl font-bold text-on-surface truncate">Maltar Services</h3>
+<p class="text-xs font-bold text-primary uppercase tracking-wider">Relationship Manager • 2023</p>
+</div>
+<div class="hidden md:flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-low border border-white/5 text-[10px] font-bold uppercase rounded-full text-on-surface-variant">B2B Marketing</span>
+<span class="px-3 py-1 bg-surface-container-low border border-white/5 text-[10px] font-bold uppercase rounded-full text-on-surface-variant">Copywriting</span>
+<span class="px-3 py-1 bg-surface-container-low border border-white/5 text-[10px] font-bold uppercase rounded-full text-on-surface-variant">Client Management</span>
+</div>
+</div>
+<span class="material-symbols-outlined chevron-icon text-primary transition-transform duration-300">expand_more</span>
+</button>
+<div class="accordion-content px-6">
+<ul class="list-disc list-inside space-y-3 text-sm text-on-surface-variant max-w-3xl">
+<li class="">Delivered client engagement communications, improving <span class="font-bold text-white">retention by 20%</span>.</li>
+<li class="">Maintained workflow documentation and communications tracking to meet <span class="font-bold text-white">deadlines consistently</span>.</li>
+<li class="">Conducted market analysis across 3+ sectors to inform <span class="font-bold text-white">communications planning</span>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-24 bg-primary transition-all duration-1000 opacity-100 translate-y-0" id="contact">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter text-center">
+<h2 class="font-display text-headline-lg text-white mb-8">Let's build something significant.</h2>
+<p class="text-white/80 text-lg mb-12 max-w-2xl mx-auto">Currently open to strategic marketing roles, campaign management opportunities, and collaborative ventures.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<a class="px-10 py-5 bg-white text-primary font-bold hover:bg-on-surface transition-all flex items-center justify-center gap-3" href="mailto:contact@priyanshubajaj.com">
+<span class="material-symbols-outlined">mail</span>
+                    contact@priyanshubajaj.com
+                </a>
+</div>
+<div class="mt-12">
+<a class="text-white/80 hover:text-white underline font-bold text-lg" href="https://www.linkedin.com/in/priyanshu-bajaj-75694a316/">My LinkedIn</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="py-12 bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="font-display text-xl font-extrabold tracking-tighter">P.BAJAJ</div>
+<div class="flex gap-8 text-xs font-bold uppercase tracking-widest text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<a class="hover:text-primary transition-colors" href="#projects">Work</a>
+<a class="hover:text-primary transition-colors" href="https://www.linkedin.com/in/priyanshu-bajaj-75694a316/">LinkedIn</a>
+<a class="hover:text-primary transition-colors" href="mailto:contact@priyanshubajaj.com">Email</a>
+</div>
+<p class="text-xs text-on-surface-variant">© 2024 Priyanshu Bajaj. Strategic Excellence.</p>
+</div>
+</footer>
+<script>
+    // Rotating word animation logic
+    const words = ["Strategy", "Content", "Campaigns", "CRM"];
+    let wordIndex = 0;
+    const rotatingWordEl = document.getElementById('rotating-word');
+    
+    if (rotatingWordEl) {
+        setInterval(() => {
+            wordIndex = (wordIndex + 1) % words.length;
+            rotatingWordEl.style.animation = 'none';
+            void rotatingWordEl.offsetWidth; // Trigger reflow
+            rotatingWordEl.innerText = words[wordIndex];
+            rotatingWordEl.style.animation = 'fade-up 2s infinite';
+        }, 2000);
+    }
+
+    // Accordion Logic
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+        trigger.addEventListener('click', () => {
+            const currentItem = trigger.closest('.accordion-item');
+            const isActive = currentItem.classList.contains('active');
+
+            // Find context container to scope closing others
+            const container = trigger.closest('.space-y-6') || trigger.closest('.space-y-4') || trigger.closest('section');
+            
+            // Close all items in the same container
+            container.querySelectorAll('.accordion-item').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Open clicked item if it wasn't active
+            if (!isActive) {
+                currentItem.classList.add('active');
+            }
+        });
+    });
+
+    // Intersection Observer for scroll-triggered reveal
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                entry.target.classList.remove('opacity-0', 'translate-y-10');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section').forEach(section => {
+        section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+        observer.observe(section);
+    });
+
+    // Expertise Randomizer Interactivity
+    const randomizerBtn = document.getElementById('expertise-randomizer');
+    const expertiseItems = document.querySelectorAll('.expertise-item');
+    const vibrantColors = [
+        '#e63946', // Primary Red
+        '#3a86ff', // Bright Blue
+        '#ffbe0b', // Yellow
+        '#fb5607', // Orange
+        '#ff006e', // Pink
+        '#8338ec', // Purple
+        '#06d6a0', // Mint
+        '#1b9e77'  // Teal
+    ];
+
+    if (randomizerBtn && expertiseItems.length > 0) {
+        randomizerBtn.addEventListener('click', () => {
+            const randomIndex = Math.floor(Math.random() * expertiseItems.length);
+            const randomColorIndex = Math.floor(Math.random() * vibrantColors.length);
+            
+            const targetItem = expertiseItems[randomIndex];
+            const color = vibrantColors[randomColorIndex];
+            
+            targetItem.style.backgroundColor = color;
+            targetItem.classList.add('text-white');
+            
+            targetItem.style.transform = 'scale(1.05)';
+            setTimeout(() => {
+                targetItem.style.transform = 'scale(1)';
+            }, 300);
+        });
+    }
+</script>
+<script>
+(function() {
+    const items = document.querySelectorAll('.expertise-item');
+    const counter = document.getElementById('lit-counter');
+    const resetBtn = document.getElementById('expertise-reset');
+    const colors = ['#e63946', '#3a86ff', '#ffbe0b', '#fb5607', '#ff006e', '#8338ec', '#06d6a0', '#1b9e77'];
+
+    function updateCounter() {
+        const litCount = document.querySelectorAll('.expertise-item[data-lit="true"]').length;
+        if (counter) counter.innerText = litCount;
+    }
+
+    items.forEach(item => {
+        item.style.cursor = 'pointer';
+        item.addEventListener('click', () => {
+            const isLit = item.getAttribute('data-lit') === 'true';
+            if (isLit) {
+                item.style.backgroundColor = '';
+                item.classList.remove('text-white');
+                item.setAttribute('data-lit', 'false');
+            } else {
+                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                item.style.backgroundColor = randomColor;
+                item.classList.add('text-white');
+                item.setAttribute('data-lit', 'true');
+            }
+            updateCounter();
+        });
+    });
+
+    if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+            items.forEach(item => {
+                item.style.backgroundColor = '';
+                item.classList.remove('text-white');
+                item.setAttribute('data-lit', 'false');
+            });
+            updateCounter();
+        });
+    }
+})();
+</script>
+
+
+
+
+</body></html>
